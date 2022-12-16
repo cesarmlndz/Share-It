@@ -29,7 +29,8 @@ export default function CreateForm() {
     await addDoc(postsRef, {
       ...data,
       username: user?.displayName,
-      userId: user?.uid
+      userId: user?.uid,
+      photoURL: user?.photoURL
     })
 
     navigate("/home")

@@ -44,7 +44,7 @@ export default function Post(props) {
         <p className='post-description'>{post.description}</p>
         <div className='bottom-half'>
             <div className='post-footer'>
-                <img className='post-pic' src={user?.photoURL}/>
+                <img className='post-pic' src={post.photoURL}/>
                 <p className='post-username'>By {post.username}</p>
             </div>
             <div className='like-section'>
