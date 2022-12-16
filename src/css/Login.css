@@ -1,0 +1,42 @@
+.login-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .login-card {
+    display: flex;
+    align-items: center;
+    margin-top: 10rem;
+    width: 30%;
+    height: 5rem;
+    background: white;
+    border-radius: 30px;
+    padding-left: 2rem;
+    border: 3px solid black;
+  }
+  
+  .login-card:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: ease-in-out 0.2s;
+  }
+  
+  .login-card img {
+    height: 3rem;
+  }
+  
+  .friends {
+    height: 42.5rem;
+    width: 70rem;
+  }
+  
+  .login-card h1 {
+    font-weight: bolder;
+    margin-left: 5rem;
+    font-size: 1.5rem;
+    color: blue;
+  }
+  

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Inter:wght@400;700&family=Maven+Pro:wght@400;600&family=Pacifico&family=Poppins&display=swap');
+
+.nav-bar-container {
+    background: black;
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+  }
+  
+  .nav-bar-link {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 1.3rem;
+  }
+  
+  .nav-bar-link:hover {
+    color: lightblue;
+    text-decoration: underline;
+  }
+  
+  .nav-bar-user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-bar-username {
+    font-size: 1.2rem;
+    color: white;
+    margin-right: 1rem;
+  }
+  
+  .nav-bar-container img {
+    height: 2.3rem;
+    width: 2.3rem;
+    margin-right: 0.2rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+    border: 0.3px solid white;
+  }
+  
+  .sign-out {
+    font-size: 1.2rem;
+    color: white;
+    margin-right: 1rem;
+    margin-left: 2rem;
+  }
+  
+  .sign-out:hover {
+    color: lightblue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
