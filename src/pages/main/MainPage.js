@@ -5,7 +5,7 @@ import { db } from "../../config/firebaseConfig"
 import Post from './Post'
 
 export default function MainPage() {
-  const [postsList, setPostsList] = useState(null)
+  const [postsList, setPostsList] = useState([])
 
   const postsRef = collection(db, "posts")
 
@@ -15,12 +15,14 @@ export default function MainPage() {
 
   const getPosts = async () => {
     const data = await getDocs(postsRef)
-    setPostsList(data.docs.map((doc) => ({...doc.data(), id: doc.id})))
+    setPostsList(data.docs.map((doc) => ({...doc.data(), id: doc.id})).reverse())
   }
 
   return (
     <div className='main-page-container'>
-        {postsList?.map((post) => <Post post={post}/>)}
+        {postsList &&
+          postsList.map((post) => <Post post={post}/>)
+        }
     </div>
   )
 }

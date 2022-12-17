@@ -12,7 +12,10 @@ import person from "../../icons/person.png"
 
 export default function CreateForm() {
   const [user] = useAuthState(auth)
+
   const navigate = useNavigate()
+
+  const today = new Date()
 
   const schema = yup.object().shape({
     title: yup.string().required("A title must be added!"),
@@ -30,7 +33,8 @@ export default function CreateForm() {
       ...data,
       username: user?.displayName,
       userId: user?.uid,
-      photoURL: user?.photoURL
+      photoURL: user?.photoURL,
+      date: today.toLocaleDateString()
     })
 
     navigate("/home")

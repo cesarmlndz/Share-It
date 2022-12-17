@@ -46,6 +46,7 @@ export default function Post(props) {
             <div className='post-footer'>
                 <img className='post-pic' src={post.photoURL}/>
                 <p className='post-username'>By {post.username}</p>
+                <p className='post-date'>{post.date}</p>
             </div>
             <div className='like-section'>
                 <img onClick={addLike} src={likePic} className='post-like'></img>
