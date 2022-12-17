@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding-bottom: 0.3rem;
   }
   
   .login-card {
@@ -11,10 +12,9 @@
     align-items: center;
     margin-top: 10rem;
     width: 30%;
-    height: 5rem;
+    padding: 0.5rem 0rem;
     background: white;
     border-radius: 30px;
-    padding-left: 2rem;
     border: 3px solid black;
   }
   
@@ -23,19 +23,30 @@
     transform: scale(1.03);
     transition: ease-in-out 0.2s;
   }
+
+  .google-image {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+  }
+
+  .sign-up-text {
+    display: flex;
+    justify-content: start;
+    width: 70%;
+  }
   
-  .login-card img {
-    height: 3rem;
+  .google-image img {
+    height: 3rem; 
   }
   
   .friends {
-    height: 42.5rem;
-    width: 70rem;
+    height: 60%;
+    width: 55%;
   }
   
   .login-card h1 {
     font-weight: bolder;
-    margin-left: 5rem;
     font-size: 1.5rem;
     color: blue;
   }

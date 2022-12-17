@@ -2,13 +2,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   
   .create-post-form {
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
-    width: 80rem;
+    width: 70%; 
     background: white;
     padding-top: 2rem;
     border-radius: 30px;
@@ -29,7 +30,7 @@
     padding-left: 2rem;
     border-radius: 20px;
     width: 100%;
-    height: 5rem;
+    height: 30%;
     outline: none;
   }
   
@@ -41,7 +42,7 @@
     font-size: 2rem;
     padding-left: 2rem;
     border-radius: 20px;
-    height: 6rem;
+    height: 20%;
     outline: none;
   }
   
@@ -50,7 +51,7 @@
   }
 
   .computer-pic {
-    height: 30rem;
-    width: 30rem;
+    height: 45%;
+    width: 30%;
   }
   

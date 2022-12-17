@@ -3,18 +3,17 @@
 .nav-bar-container {
     background: black;
     width: 100%;
-    height: 3.5rem;
+   
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0rem 2rem;
+    padding: 0.5rem 2rem;
   }
   
   .nav-bar-link {
     color: white;
     font-size: 2rem;
     text-decoration: none;
-    margin-left: 2rem;
     font-size: 1.3rem;
   }
   
@@ -26,19 +25,18 @@
   .nav-bar-user-info {
     display: flex;
     align-items: center;
+    width: 20%;
+    justify-content: space-between;
   }
   
   .nav-bar-username {
     font-size: 1.2rem;
     color: white;
-    margin-right: 1rem;
   }
   
   .nav-bar-container img {
     height: 2.3rem;
     width: 2.3rem;
-    margin-right: 0.2rem;
-    margin-left: 1rem;
     border-radius: 50%;
     border: 1px solid white;
   }
@@ -46,12 +44,33 @@
   .sign-out {
     font-size: 1.2rem;
     color: white;
-    margin-right: 1rem;
-    margin-left: 2rem;
   }
   
   .sign-out:hover {
     color: lightblue;
     text-decoration: underline;
     cursor: pointer;
+  }
+
+  .nav-logo {
+    width: 20%;
+    text-align: center;
+  }
+
+  .left-side {
+    display: flex;
+    width: 20%;
+  }
+
+  .home-link {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-right: 1.5rem;
+  }
+
+  .logo {
+    color: white;
+    font-family: "Pacifico", cursive;
   }

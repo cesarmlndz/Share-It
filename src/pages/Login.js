@@ -18,8 +18,12 @@ export default function Login() {
     return (
         <div className='login-page-container'>
           <div className='login-card' onClick={signInWithGoogle}>
-            <img src={googleLogo}/>
-            <h1>Sign in with Google</h1>
+            <div className='google-image'>
+              <img src={googleLogo}/>
+            </div>
+            <div className='sign-up-text'>
+              <h1>Sign in with Google</h1>
+            </div>
           </div>
           <img src={friends} className='friends'/>
         </div>

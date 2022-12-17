@@ -18,9 +18,12 @@ export default function NavBar() {
 
   return (
     <nav className='nav-bar-container'>
-       <div>
-        {user && <Link to="/home" className='nav-bar-link'>Home</Link>}
+       <div className='left-side'>
+        {user && <Link to="/home" className='home-link'>Home</Link>}
         {!user ? <Link to="/login" className='nav-bar-link'>Login</Link> : <Link to="/createPost" className='nav-bar-link'>Create Post +</Link>}
+       </div>
+       <div className='nav-logo'>
+         <h1 className='logo'>Share-It</h1>
        </div>
         <div className='nav-bar-user-info'>
           {user && (

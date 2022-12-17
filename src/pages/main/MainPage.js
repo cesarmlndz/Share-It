@@ -18,12 +18,9 @@ export default function MainPage() {
     setPostsList(data.docs.map((doc) => ({...doc.data(), id: doc.id})))
   }
 
-  
   return (
     <div className='main-page-container'>
-      <div>
         {postsList?.map((post) => <Post post={post}/>)}
-      </div>
     </div>
   )
 }

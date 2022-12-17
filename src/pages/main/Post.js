@@ -8,7 +8,7 @@ import likePic from "../../icons/likePic.svg"
 export default function Post(props) {
   const { post } = props
 
-  const [user] = useAuthState(auth)
+  const [user] = useAuthState(auth) 
 
   const [likeAmount, setLikeAmount] = useState(null)
 
