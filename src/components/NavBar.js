@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../css/NavBar.css"
 import { Link } from 'react-router-dom'
 import { auth } from "../config/firebaseConfig"
@@ -22,6 +22,7 @@ export default function NavBar() {
         {user && <Link to="/home" className='home-link'>Home</Link>}
         {!user ? <Link to="/login" className='nav-bar-link'>Login</Link> : <Link to="/createPost" className='nav-bar-link'>Create Post +</Link>}
        </div>
+       <button className='nav-opener'>open</button>
        <div className='nav-logo'>
          <h1 className='logo'>Share-It</h1>
        </div>

@@ -80,12 +80,44 @@
     font-family: "Pacifico", cursive;
   }
 
+  .nav-opener {
+    display: none;
+  }
+
   @media (max-width: 390px) {
+    .left-side {
+      width: 39%;
+    }
     .nav-bar-container {
-      height: 10%;
+      justify-content: space-around;
+      height: 5%;
+      padding: 0rem 0.5rem;
+    }
+    .nav-bar-user-info {
+      width: 50%;
     }
     .logo {
-      font-size: 1.07rem;
+      display: none;
+    }
+    .home-link {
+      font-size: 0.7rem;
+      display: flex;
+      align-items: center;
+    }
+    .nav-bar-link {
+      font-size: 0.7rem;
+    }
+    .nav-bar-username {
+      font-size: 0.7rem;
+    }
+    .nav-bar-container img {
+      height: 1.5rem;
+      width: 1.5rem;
+      margin-left: 0.5rem;
+    }
+    .sign-out {
+      font-size: 0.5rem;
+      margin-left: 1rem;
     }
 }
   

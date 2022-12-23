@@ -43,7 +43,7 @@ export default function CreateForm() {
   return (
     <div className='create-post-container'>
       <form onSubmit={handleSubmit(onCreatePost)} className="create-post-form">
-        <input placeholder='Title...' {...register("title")}></input>
+        <input className='title-input' placeholder='Title...' {...register("title")}></input>
         <p style={{color : "red"}}>{errors.title?.message}</p>
         <textarea placeholder='What do you have to say?' {...register("description")}></textarea>
         <p style={{color : "red"}}>{errors.description?.message}</p>
