@@ -54,7 +54,7 @@
   .nav-logo {
     width: 20%;
     text-align: center;
-  }
+  } 
 
   .left-side {
     display: flex;
@@ -79,3 +79,13 @@
     color: white;
     font-family: "Pacifico", cursive;
   }
+
+  @media (max-width: 390px) {
+    .nav-bar-container {
+      height: 10%;
+    }
+    .logo {
+      font-size: 1.07rem;
+    }
+}
+  

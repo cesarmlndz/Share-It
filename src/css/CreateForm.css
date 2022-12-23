@@ -18,7 +18,7 @@
   }
   
   .create-post-form p {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-left: 19rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
@@ -53,5 +53,27 @@
   .computer-pic {
     height: 45%;
     width: 30%;
+  }
+
+  @media (max-width: 390px) {
+    .create-post-form {
+      width: 90%;
+    }
+    .create-post-form p {
+      font-size: 1rem;
+      margin-left: 2rem;
+      margin-bottom: 0rem;
+      margin-top: 0rem;
+    }
+    .create-post-form input {
+      font-size: 2rem;
+    }
+    .create-post-form textarea {
+      font-size: 1rem;
+      margin-top: 0rem;
+    }
+    .computer-pic {
+      width: 90%;
+    }
   }
   

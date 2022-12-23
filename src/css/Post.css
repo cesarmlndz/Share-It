@@ -13,7 +13,7 @@
   .post-container:hover {
     transform: scale(1.03);
     transition: ease-in-out 0.3s;
-  }
+  } 
 
   .post-title {
     font-size: 2rem;
@@ -66,4 +66,40 @@
   .bottom-half {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
+
+  @media (max-width: 390px) {
+    .post-container {
+      width: 90%;
+      padding: 1rem;
+    }
+    .post-title {
+      font-size: 1.2rem;
+    }
+    .post-description {
+      font-size: 0.7rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+    .post-pic {
+      height: 1.5rem;
+      width: 1.5rem;
+      margin-right: 0.5rem;
+    }
+    .post-username {
+      font-size: 0.7rem;
+      margin-right: 0.5rem;
+    }
+    .post-date {
+      font-size: 0.7rem;
+      margin-left: 1rem;
+    }
+    .post-like {
+      height: 1rem;
+      margin-right: 0.5rem;
+    }
+    .like-section p {
+      font-size: 0.7rem;
+    }
+}
