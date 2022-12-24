@@ -64,7 +64,7 @@
     width: 30%;
   }
 
-  @media (max-width: 390px) {
+  @media (max-width: 415px) {
     .create-post-form {
       width: 90%;
     }
